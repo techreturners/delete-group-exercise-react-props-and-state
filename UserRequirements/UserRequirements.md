@@ -24,13 +24,6 @@ The requirements are as follow:
 
 - Pass the joke down to `<ChuckJokes />` using props 
 
-
-Take a deep sigh of relief. You've survived Chuck...
-
-This time. 
-
-
-
 ## Extension 
 
 - Underneath Jokes, create an a heading with the text "Filtered Jokes: "
@@ -40,3 +33,8 @@ This time.
 - Beneath the heading "Filtered Jokes: " map over filtered jokes. Only the joke with the id of 3 should appear. 
 
 
+## The End
+
+Take a deep sigh of relief. You've survived Chuck...
+
+This time. 
