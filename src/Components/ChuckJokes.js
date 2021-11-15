@@ -1,8 +1,8 @@
-function ChuckJokes(props) {
+function ChuckJokes() {
 
     return (
         <>
-            <p>{props.prop.joke}</p>
+            <p></p>
         </>
     )
 }

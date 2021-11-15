@@ -1,4 +1,4 @@
-function ChuckCard(props) {
+function ChuckCard() {
 
     const chuckSoStylish = {
         width: "900px", 
@@ -7,9 +7,9 @@ function ChuckCard(props) {
 
     return (
         <>
-            <h2>{props.chuckGreet}</h2>
+            <h2>{}</h2>
 
-            <img src={props.chuckImg}
+            <img src={""}
                 alt="Chuck Norris riding a killer whale" 
                 style={chuckSoStylish}/>
         </>
