@@ -1,23 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import ChuckNorrisCard from './Components/ChuckCard';
+import ChuckJokes from './Components/ChuckJokes';
+import ChuckInfo from './Components/ChuckInfo';
 
 function App() {
+
+  const [chuckGreeting, useChuckGreeting] = useState("I am Chuck Norris!!!")
+  const [chuckImage, useChuckImage] = useState("https://images-global.nhst.tech/image/R1dwYnJhOTc5RjNCTG5URi9BMUlIZGE5cTRtemFrUWFBSVNINUMvZ20xZz0=/nhst/binary/f1ffde963b9087457feb601be1842d16?image_version=1200")
+  const [whalesSaved, useWhalesSaved] = useState(700)
+  const [roundHouseKicks, useRoundHouseKicks] = useState(300000)
+  const [jokes, useJokes] = useState([{
+    "id": 1,
+    "joke": "Chuck Norris doesn’t read books. He stares them down until he gets the information he wants.",
+  },
+  {
+    "id": 2,
+    "joke": "Time waits for no man. Unless that man is Chuck Norris.",
+  },
+  {
+    "id": 3,
+    "joke": "The dinosaurs looked at Chuck Norris the wrong way once. You know what happened to them.",
+  },
+  {
+    "id": 4,
+    "joke": "Chuck Norris does not own a stove, oven, or microwave , because revenge is a dish best served cold.",
+  }])
+
+  const filteredJokes = jokes.filter(joke => joke.id === 1)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <h1>React props and state</h1>
+      <ChuckNorrisCard chuckGreet={chuckGreeting} chuckImg={chuckImage} />
+
+      <h2>Chuck Info: </h2>
+      <ChuckInfo  whales={whalesSaved} kicks={roundHouseKicks} />
+
+      <h2>Jokes: </h2>
+      {jokes.map((joke) => {
+        return <ChuckJokes prop={joke} />
+      })}
+
+      <h2>Filtered Jokes: </h2>
+      {filteredJokes.map((joke) => {
+        return <ChuckJokes prop={joke} />
+      })}
+
     </div>
   );
 }
