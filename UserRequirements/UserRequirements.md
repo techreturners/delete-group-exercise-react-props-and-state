@@ -26,7 +26,7 @@ The requirements are as follow:
 
 ## Extension 
 
-- Underneath Jokes, create an a heading with the text "Filtered Jokes: "
+- Underneath Jokes, create a heading with the text "Filtered Jokes: "
 
 - Create a variable called `const filteredJokes` and assign some logic to it that filters jokes based on whether they have an id of 3
 
