@@ -4,7 +4,7 @@
 
 ## Clone this repo to your local machine
 
-Then the project directory, you can run:
+Then in the project directory, you can run:
 
 ### `yarn install`
 
