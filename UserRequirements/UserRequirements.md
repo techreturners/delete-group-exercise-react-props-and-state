@@ -12,7 +12,7 @@ The requirements are as follow:
 
 - In `ChuckCard.js` the `<h2>` must display Chucks greeting (which is included in useState). To display Chucks greeting pass it down to `ChuckCard.js` through props. 
 
-- In `ChuckCard.js` the `<img />` element must display a picture of Chuck (which is included in useState). To display Chucks picture pass it down to `ChuckCard.js` through props. 
+- In `ChuckCard.js` the `<img/>` element must display a picture of Chuck (which is included in useState). To display Chucks picture pass it down to `ChuckCard.js` through props. 
 
 ## Requirement 2 - Chuck Info
 
