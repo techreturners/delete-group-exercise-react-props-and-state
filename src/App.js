@@ -24,7 +24,7 @@ function App() {
   },
   {
     "id": 4,
-    "joke": "Chuck Norris does not own a stove, oven, or microwave , because revenge is a dish best served cold.",
+    "joke": "Chuck Norris does not own a stove, oven, or microwave, because revenge is a dish best served cold.",
   }])
 
   return (
