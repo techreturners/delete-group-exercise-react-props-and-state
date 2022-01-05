@@ -6,9 +6,17 @@
 
 Then in the project directory, you can run:
 
+### `npm install`
+
+OR if you use yarn instead of npm:
+
 ### `yarn install`
 
-To install dependencies
+To run the application run:
+
+### `npm start`
+
+OR
 
 ### `yarn start`
 
@@ -17,6 +25,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## The Exercise
 
-See [User Requirements](./UserRequirements/UserRequirements.md)
+See [User Requirements](./user_requirements/user_requirements.md)
 
 

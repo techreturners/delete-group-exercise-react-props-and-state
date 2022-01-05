@@ -1,16 +1,15 @@
 import './App.css';
 import React, { useState } from 'react';
-import ChuckNorrisCard from './Components/ChuckCard';
-import ChuckJokes from './Components/ChuckJokes';
-import ChuckInfo from './Components/ChuckInfo';
+import ChuckNorrisCard from './components/chuck_card';
+import ChuckInfo from './components/chuck_info';
+import Joke from './joke';
 
 function App() {
 
-  const [chuckGreeting, setChuckGreeting] = useState("I am Chuck Norris!!!")
-  const [chuckImage, setChuckImage] = useState("https://images-global.nhst.tech/image/R1dwYnJhOTc5RjNCTG5URi9BMUlIZGE5cTRtemFrUWFBSVNINUMvZ20xZz0=/nhst/binary/f1ffde963b9087457feb601be1842d16?image_version=1200")
-  const [whalesSaved, setWhalesSaved] = useState(700)
-  const [roundHouseKicks, setRoundHouseKicks] = useState(300000)
-  const [jokes, setJokes] = useState([{
+  const [chuckGreeting, setChuckGreeting] = useState<string>("I am Chuck Norris!!!")
+  const [whalesSaved, setWhalesSaved] = useState<number>(700)
+  const [roundHouseKicks, setRoundHouseKicks] = useState<number>(300000)
+  const [jokes, setJokes] = useState<Array<Joke>>([{
     "id": 1,
     "joke": "Chuck Norris doesn’t read books. He stares them down until he gets the information he wants.",
   },

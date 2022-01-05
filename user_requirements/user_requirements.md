@@ -10,13 +10,13 @@ The requirements are as follow:
 
 ## Requirement 1 - Chuck Card
 
-- In `ChuckCard.js` the `<h2>` must display Chucks greeting (which is included in useState). To display Chucks greeting pass it down to `ChuckCard.js` through props. 
+- In `chuck_card.tsx` the `<h2>` must display Chucks greeting (which is included in useState in `App.tsx`). To display Chucks greeting pass it down to `<ChuckCard />` through props. 
 
-- In `ChuckCard.js` the `<img/>` element must display a picture of Chuck (which is included in useState). To display Chucks picture pass it down to `ChuckCard.js` through props. 
+- In `chuck_card.tsx` the `<img/>` element must display a picture of Chuck. Replace the string "Chuck image here!" with the ChuckImage object (no quote marks required).
 
 ## Requirement 2 - Chuck Info
 
-- The page must display some information about Chuck. In `ChuckInfo.js` use props to display how many whales Chuck has saved and how many round house kicks he has done.
+- The page must display some information about Chuck. In `chuck_info.tsx` use props to display how many whales Chuck has saved and how many round house kicks he has done.
 
 ## Requirement 3 - Chuck Jokes
 
@@ -28,7 +28,9 @@ The requirements are as follow:
 
 - Underneath Jokes, create a heading with the text "Filtered Jokes: "
 
-- Create a variable called `const filteredJokes` and assign some logic to it that filters jokes based on whether they have an id of 3
+- Create a variable called `const filteredJokes` and assign some logic to it that filters jokes based on whether they have an id of 3. 
+
+Hint: remember to consider what type this should be, refer to `joke.ts`
 
 - Beneath the heading "Filtered Jokes: " map over filtered jokes. Only the joke with the id of 3 should appear. 
 
@@ -37,4 +39,4 @@ The requirements are as follow:
 
 Take a deep sigh of relief. You've survived Chuck...
 
-This time. 
+This time.
